@@ -1,5 +1,5 @@
 #!/bin/csh
 cd $LS_SUBCWD
 eval `scramv1 runtime -csh`
-cmsRun calTrigProd.cfg
+cmsRun calTrigTest.cfg
 #END
