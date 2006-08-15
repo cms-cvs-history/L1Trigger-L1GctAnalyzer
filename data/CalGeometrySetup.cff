@@ -1,0 +1,18 @@
+   include "Geometry/CMSCommonData/data/cmsSimIdealGeometryXML.cfi"
+
+   #es_module = EcalPreshowerGeometryEP {}
+   #es_module = EcalBarrelGeometryEP {}
+   #es_module = EcalEndcapGeometryEP {}
+   #es_module = HcalHardcodeGeometryEP {}
+   #es_module = CaloTowerHardcodeGeometryEP {}
+   #es_module = CaloGeometryBuilder {}
+   #
+   # This include does the same as the es_modules above
+   include "Geometry/CaloEventSetup/data/CaloGeometry.cfi"
+   # This one as well, for the trigger primitives
+   include "Geometry/CaloEventSetup/data/EcalTrigTowerConstituents.cfi"
+   
+   #calibrations
+   include "CalibCalorimetry/EcalTrivialCondModules/data/EcalTrivialCondRetriever.cfi"
+   include "CalibCalorimetry/HcalPlugins/data/hardwired_conditions.cfi"
+

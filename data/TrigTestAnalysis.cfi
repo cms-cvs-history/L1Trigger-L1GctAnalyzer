@@ -1,0 +1,6 @@
+   module test = L1GctAnalyzer {
+	untracked string histogramFileName="gctAnalysisHistos.root"
+	untracked vstring histogramModules={ "basic", "jetCheck", "mETCheck" }
+	untracked vstring jetCheck={ "iterativeCone5" }
+	untracked vstring mETCheck={ "genMet" }
+   }

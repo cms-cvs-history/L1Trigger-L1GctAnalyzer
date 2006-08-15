@@ -1,0 +1,20 @@
+  # clustering starts here
+
+  # geometry needed for clustering
+  #include "RecoEcal/EgammaClusterProducers/data/geometryForClustering.cff"
+
+  #------------------
+  #Island clustering:
+  #------------------
+  # create sequence for island clustering
+  include "RecoEcal/EgammaClusterProducers/data/islandClusteringSequence.cff"
+
+  #------------------
+  #Hybrid clustering:
+  #------------------
+  # hybrid clustering sequence
+  include "RecoEcal/EgammaClusterProducers/data/hybridClusteringSequence.cff"
+
+  # create sequence with all clustering algos
+  sequence ecalClustering = { islandClusteringSequence&hybridClusteringSequence }
+

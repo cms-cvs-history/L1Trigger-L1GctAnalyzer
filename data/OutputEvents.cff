@@ -1,0 +1,7 @@
+   # Step 4 : Output module
+   #
+   module outputEvents = PoolOutputModule
+   {
+      untracked string fileName = "evtgen_detsim_digi.root"
+   }
+   

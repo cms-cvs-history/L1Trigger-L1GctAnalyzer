@@ -1,0 +1,10 @@
+
+   # Do some jet analysis
+   include "L1Trigger/L1GctAnalyzer/data/reco-application-calorimetry-reconstruction.cff"
+   include "L1Trigger/L1GctAnalyzer/data/reco-application-calorimetry-caltowers.cff"
+   include "L1Trigger/L1GctAnalyzer/data/reco-application-calorimetry-jetmet.cff"
+   include "L1Trigger/L1GctAnalyzer/data/reco-application-calorimetry-jetmet-gen.cff"
+
+   sequence jetMetAnalysis   = { caloReco, caloTowersRec, caloJetMet, caloJetMetGen }
+   sequence jetMetNoEcalReco = { hcalReco, caloTowersRec, caloJetMet, caloJetMetGen }
+
