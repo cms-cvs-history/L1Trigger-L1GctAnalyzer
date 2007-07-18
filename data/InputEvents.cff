@@ -1,8 +1,0 @@
-   # Step 1 : Event Generation
-
-	source = PoolSource {
-		untracked vstring fileNames = {'file:evtgen_detsim_digi.root'}
-		untracked int32  maxEvents  = 20
-	}	
-
-
