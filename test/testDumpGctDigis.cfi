@@ -1,0 +1,28 @@
+process gctDigiDump = {
+
+    // Input file
+    source = PoolSource {
+        untracked vstring fileNames = {'file:gctDigi.root'}
+    }
+    
+    // Logger
+    include "FWCore/MessageService/data/MessageLogger.cfi"
+
+    // Dump out digis
+    module dumpGctDigis = DumpGctDigis {
+	untracked InputTag rawInput = gctDigis
+	untracked InputTag emuInput = l1GctEmulDigis
+	untracked string outFile = "gctDigis.txt"
+	untracked bool doHardware = true
+	untracked bool doEmulated = false
+	untracked bool doRctEm = true
+	untracked bool doInternEm = false
+	untracked bool doEm = false
+	untracked bool doJets = false
+	untracked uint32 rctEmMinRank = 1
+    }
+    
+    path p ={dumpGctDigis}
+
+}
+
