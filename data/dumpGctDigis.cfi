@@ -12,5 +12,6 @@ module dumpGctDigis = DumpGctDigis {
 	untracked bool doJets = false
 	untracked bool doInternEm = true
 	untracked bool doFibres = true
+	untracked bool doEnergySums = false
 	untracked uint32 rctEmMinRank = 0
 }
