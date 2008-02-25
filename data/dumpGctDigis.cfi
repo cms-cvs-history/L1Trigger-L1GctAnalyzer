@@ -1,8 +1,8 @@
 
 module dumpGctDigis = DumpGctDigis {
 	untracked InputTag rawInput = l1GctHwDigis
-	untracked InputTag emuRctInput = l1RctEmulDigis
-	untracked InputTag emuGctInput = l1GctEmulDigis
+	untracked InputTag emuRctInput = rctDigis
+	untracked InputTag emuGctInput = gctDigis
 	untracked string outFile = "gctDigis.txt"
 	untracked bool doHardware = true
 	untracked bool doEmulated = false
